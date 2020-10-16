@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+span{
+  color: dodgerblue;
+}
+center p{
+  color:white;
+  font-size: 2em;
+}
+
+form {
+  background-color: #eeeeee;
+  margin: 50px auto;
+  width: 400px;
+  min-width: 500px;
+  border-radius: 5px;
+  
+}
+
+.tab {
+  display: none;
+}
+
+input {
+  padding: 7px;
+  width: 100%;
+  font-size: 15px;
+  border: 2px solid #e0dcdc;
+  border-radius: 5px;
+}
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  border: 2px solid #fd8b8b;
+}
+/* Return input boxes to valid */
+input.valid {
+  background-color: #e2e2e2; 
+  border: 2px solid #e0dcdc;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: dodgerblue;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: dodgerblue;
+}
+
+.btn::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+}
+.col select{
+    width: 100%;
+    height: 2.5em;
+    border-radius: 3px;
+    padding: 7px;
+}
+.col2{
+  float: left;
+  width: 100%;
+  margin: auto;
+}
+label{
+  margin:auto;
+}
+.stepNo {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.stepNo h3,h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#bplace{
+  width: -webkit-fill-available;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#bplace1{
+  margin-left: 1em;
+}

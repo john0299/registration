@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style.css">
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .bg-img{
+    height: 707px;
+    background-image: url('img/bg-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;;
+    position: relative;
+    
+  }
+  
+</style>
+<body>
+  <div class="bg-img">
+    <br>
+    <center><p><span>Barangay 146 Zone 15</span> Constituent</p>
+    <p>Registration Form</p></center>
+    
+      <form id="regForm" method="POST" action="signup.html">
+    
+        <div class="tab">  
+          <div class="stepNo">
+              <h3>Step 1 / 3<h3>
+              <h5>Personal Information</h5>
+          </div>
+          <div class="col">
+              <label>Last Name (Apelyido)*</label>
+              <p><input type="text" name="lname" value=""></p>
+    
+              <label>Middle Name</label>
+              <p><input type="text" name="mname" value=" "></p>
+    
+              <label>Nick Name</label>
+              <p><input type="text" name="nkname" value=" "></p>
+    
+              <label>Contact Number *</label>
+              <p><input type="text" name="contact" value=""></p>
+    
+              <label>Citizenship *</label>
+              <p><select name="citizenship" id = "req">
+                  <option value="Filipino">Filipino</option>  
+                  <option value="Option2">Option2</option>      
+              </select></p>
+    
+              <label>Birth Place *</label>
+              </div>
+          
+              <div class="col">
+                  <label>First Name (Pangalan)*</label>
+                  <p><input type="text" name="fname" value=""></p>
+                
+                  <label>Suffix (Ex. Jr. Sr. II III)</label>
+                  <p><input type="text" name="suffix" value=" "></p>
+                
+                  <label>Email Address*</label>
+                  <p><input type="email" name="email"  value=""></p>
+                          
+                  <label>Gender *</label>
+                  <p><select name="gender" >
+                      <option value="Male"> Male </option>  
+                      <option value="Female"> Female </option>      
+                  </select></p>
+    
+                  <label>Birth Date *</label>
+                  <p><input type="date" name="birthdate"  style="height: 2.3em;"></p>
+              </div>
+          
+          
+          <p><input type="text" name="brthplace"  value="" style="margin-left: 1em; margin-right: 1em;width: -webkit-fill-available;"></p>
+        </div>
+        <div class="tab">
+          <div class="stepNo">
+              <h3>Step 2 / 3<h3>
+              <h5>Additional Information</h5>
+          </div>
+        
+            <div class="col">
+              <label>Civil Status *</label>
+              <p><select name="civilstatus">
+                  <option value="Single">Single</option>  
+                  <option value="Married">Married</option>      
+              </select></p>
+    
+              <label>Work Status *</label>
+              <p><select name="workstatus">
+                  <option value="Government Employee">Government Employee</option>  
+                  <option value="Student">Student</option>      
+              </select></p>
+   
+            </div>
+    
+            <div class="col">
+              <label>Education *</label>
+              <p><select name="education">
+                  <option value="Associate Degree Holder">Associate Degree Holder</option>  
+                  <option value="Bachelor">Bachelor</option>      
+              </select></p>
+          
+              <label>Monthly Salary *</label>
+              <p><input type="text" name="mSalary"></p>
+            </div>
+            <div class="col2">
+              <label style="margin-left: 1em;">Occupation/Trabaho *</label>
+              <p><input type="text" name="occupation" style="margin-left: 1em; margin-right: 1em; width: -webkit-fill-available;"></p>
+      
+              <label style="margin-left: 1em;">Company *</label>
+              <p><input type="text" name="company" style="margin-left: 1em; margin-right: 1em; width: -webkit-fill-available;"></p>
+            </div>
+          
+            <div class="col">
+              <label>Religion *</label>
+              <p><select name="religion">
+                  <option value="Roman Catholic">Roman Catholic</option>  
+                  <option value="Muslim">Muslim</option>      
+              </select></p>
+              
+              <label>A person with disability?</label>
+              <p><select name="pwd">
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>                 
+              </select></p>
+            </div>
+          
+            <div class="col">
+              <label>Are you registered voter?</label>
+              <p><select name="regvoter">
+                  <option value="Yes">Yes</option>  
+                  <option value="No">No</option>      
+              </select></p>
+              <label>Way of transportation?</label>
+              <p><select name="waytranspo">
+                  <option value="Private Car">Private Car</option>  
+                  <option value="Public Trans">Public Trans</option>      
+              </select></p>
+            </div>
+            
+        </div>
+        <div class="tab">
+          <div class="stepNo">
+            <h3>Step 3 / 3<h3>
+            <h5>Additional Information</h5>
+        </div>
+          <div class="col">
+            <label for="">Are you an Informal Settler?*</label>
+            <p><select name="q1">
+                <option value="No">No</option>  
+                <option value="Yes">Yes</option>  
+            </select></p>
+    
+            <label for="">Have a clean Water? *</label>
+            <p><select name="q2">
+                <option value="Yes">Yes</option>  
+                <option value="No">No</option>      
+            </select></p>
+    
+            <label for="">Residential Date *</label>
+            <p><input type="date" name="" id="" style="height: 2.3em;"></p>
+    
+            <label for="">House Number *</label>
+            <p><select name="street">
+                <option value="CS-1">CS-1</option>  
+                <option value="Option2">Option2</option>      
+            </select></p>
+    
+            <label for="">subdivision/Purok/Sitio</label>
+            <p><input type="text" name="subdivision" value=" "></p>
+    
+            <label for="">Username *</label>
+          </div>
+          
+          <div class="col">
+            <label for="">Do you have Electricity?*</label>
+            <p><select name="q3">
+                <option value="Yes">Yes</option>  
+                <option value="No">No</option>      
+            </select></p>
+            
+            <label for="">Residential Status *</label>
+            <p><select name="q4">
+                <option value="Renting">Renting</option>  
+                <option value="Residence">Option2</option>      
+            </select></p>
+    
+            <label for="">Street *</label>
+            <p><select name="street">
+                <option value="Cabrera Street">Cabrera Street</option>  
+                <option value="Option2">Option2</option>      
+            </select></p>
+    
+            <label for="">House ID</label>
+            <p><input type="text" name="houseid" value=" "></p>
+            
+            <label for="">Unit/Apartment Number/Floor</label>
+            <p><input type="text" name="unit" value=" "></p>
+         </div>
+        
+            <p><input placeholder="Username" name="uname" style="margin-left: 1em; margin-right: 1em;width: -webkit-fill-available;"></p>
+    
+          <div class="col">
+            <label for="">Password*</label>
+            <p><input type = "password" name="pword"></p>
+          </div>
+    
+          <div class="col">
+            <label for="">Confirm Password*</label>
+            <p><input type = "password"  name="cpword"></p>
+          </div>
+    
+        
+        </div>
+      
+      <div class="btn" style="margin-left: 1em;">
+        <div style="float: left;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          <p></p>
+        </div>
+      </div>
+      
+      </form>
+    </div>
+  
+<script src="./js/signup.js"></script>
+</body>
+</html>
